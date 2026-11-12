@@ -1,0 +1,19 @@
+LIBRARY KERNEL32.dll
+EXPORTS
+GetModuleHandleW
+GetProcAddress
+VirtualProtect
+VirtualAlloc
+VirtualFree
+GetCurrentProcess
+FlushInstructionCache
+OutputDebugStringA
+DisableThreadLibraryCalls
+GetCurrentThreadId
+GetModuleFileNameW
+GetPrivateProfileIntW
+GetModuleHandleExW
+CreateFileW
+ReadFile
+CloseHandle
+TerminateProcess

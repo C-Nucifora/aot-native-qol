@@ -14,7 +14,7 @@ CAPABILITY = 0xc9e274
 # starts, not a search-and-replace of every immediate11 in the executable.
 REGISTER_BOUNDS = {
     0xddd2b, 0x1a115e, 0x418d3f, 0x418e0d, 0x418e17,
-    0x41976a, 0x4197ba, 0x41b0b4, 0x41d706, 0x41d70e,
+    0x41976a, 0x4197ba, 0x41b0b4, 0x41b6a0, 0x41d706, 0x41d70e,
 }
 CAPABILITY_LOOPS = {
     0x37cab2, 0x37cadb, 0x418dc2, 0x418df1, 0x418e93,
@@ -77,8 +77,13 @@ def generate(data, read, disassembly, resolution, output):
         fixed.append(dict(rva=rva,expected=old.hex(),replacement=new.hex(),semantic=semantic))
     # Preserve default preference9 and descending fallback max10 at all3 sites.
     preserve = [(0x37ca3f,6),(0x418df8,6),(0x41d6f1,5),(0x4198e7,7)]
+    # Guard the complete aspect accessor, including both CMOVB consumers and tail call.
+    accessor = read(BASE+0x41b690, 0x3a)
+    assert accessor[0x10:0x13] == bytes.fromhex('83f90b')
+    accessor_guards = [dict(rva=0x41b690+off, expected=accessor[off:off+16].hex())
+                       for off in range(0, len(accessor), 16)]
     report = dict(references=refs, fixed=fixed,
-                  preserved=[dict(rva=r,expected=read(BASE+r,n).hex()) for r,n in preserve],
+                  preserved=[dict(rva=r,expected=read(BASE+r,n).hex()) for r,n in preserve]+accessor_guards,
                   global_clamp_count=len(global_bounds), activation_approved=False)
     (output/'resolution-manifest.json').write_text(json.dumps(report,indent=2)+'\n')
     def array(hexstr):return '{'+','.join('0x'+hexstr[i:i+2] for i in range(0,len(hexstr),2))+'}'

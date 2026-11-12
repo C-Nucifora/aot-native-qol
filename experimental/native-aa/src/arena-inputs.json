@@ -1,0 +1,15 @@
+{
+  "output": "arena_private_guards.h",
+  "arrays": [
+    {
+      "name": "arena_reset",
+      "rva": 4157040,
+      "size": 164
+    },
+    {
+      "name": "arena_node_init",
+      "rva": 4159168,
+      "size": 24
+    }
+  ]
+}
