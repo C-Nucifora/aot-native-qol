@@ -1,0 +1,32 @@
+[
+  {
+    "file": "third_party/smaa/SMAA.hlsl",
+    "url": "https://raw.githubusercontent.com/iryoku/smaa/71c806a838bdd7d517df19192a20f0c61b3ca29d/SMAA.hlsl",
+    "sha256": "4db53d92ef0b45661f8450303589ffabce93c352cae4282a6f32dd2b80efbeb9"
+  },
+  {
+    "file": "third_party/smaa/AreaTex.h",
+    "url": "https://raw.githubusercontent.com/iryoku/smaa/71c806a838bdd7d517df19192a20f0c61b3ca29d/Textures/AreaTex.h",
+    "sha256": "1933bf43ce86ba71f7ed5f0fa94b148610c634dc3395b9bc67a817d51ee73af2"
+  },
+  {
+    "file": "third_party/smaa/SearchTex.h",
+    "url": "https://raw.githubusercontent.com/iryoku/smaa/71c806a838bdd7d517df19192a20f0c61b3ca29d/Textures/SearchTex.h",
+    "sha256": "1fac315ab5f87b60083c9b8387af17f056204d3d1bf21500f2acc5b3e8c1a37a"
+  },
+  {
+    "file": "third_party/smaa/LICENSE.txt",
+    "url": "https://raw.githubusercontent.com/iryoku/smaa/71c806a838bdd7d517df19192a20f0c61b3ca29d/LICENSE.txt",
+    "sha256": "2b848b67ba50ac40b53e11cf1ccdaee2a190ca83b4652cba695a5f1ce81f52ae"
+  },
+  {
+    "file": "third_party/cas/ffx_a.h",
+    "url": "https://raw.githubusercontent.com/GPUOpen-Effects/FidelityFX-CAS/9fabcc9a2c45f958aff55ddfda337e74ef894b7f/ffx-cas/ffx_a.h",
+    "sha256": "ab5d9fbcda3399e3793a67e92ccebe510a671e9913a7e3ec74bf00d489162c5f"
+  },
+  {
+    "file": "third_party/cas/ffx_cas.h",
+    "url": "https://raw.githubusercontent.com/GPUOpen-Effects/FidelityFX-CAS/9fabcc9a2c45f958aff55ddfda337e74ef894b7f/ffx-cas/ffx_cas.h",
+    "sha256": "3224935584202390ca9bc0149a45973ad2269f4d874abb2ff13625263fc036e0"
+  }
+]

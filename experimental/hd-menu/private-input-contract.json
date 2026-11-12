@@ -1,0 +1,60 @@
+{
+  "supported_image_sha256": "0a2d9e152db3bfe298017029804fe172d2a20bc51573feee874040ca3b1684d7",
+  "native_guard_ranges": [
+    {
+      "rva": 4031200,
+      "size": 403
+    },
+    {
+      "rva": 4096896,
+      "size": 269
+    },
+    {
+      "rva": 4090992,
+      "size": 538
+    },
+    {
+      "rva": 4296624,
+      "size": 146
+    },
+    {
+      "rva": 4624096,
+      "size": 232
+    },
+    {
+      "rva": 4625200,
+      "size": 258
+    },
+    {
+      "rva": 4727816,
+      "size": 204
+    },
+    {
+      "rva": 10488920,
+      "size": 22
+    },
+    {
+      "rva": 4664880,
+      "size": 171
+    },
+    {
+      "rva": 4695360,
+      "size": 32
+    },
+    {
+      "rva": 4152800,
+      "size": 344
+    },
+    {
+      "rva": 912928,
+      "size": 253
+    }
+  ],
+  "private_header": "guards.h",
+  "asset_bytes_each": 2097208,
+  "asset_header_bytes": 56,
+  "assets": {
+    "UIOptionSteamMenuOff-2x.g1t": "a1df6d951f9e2d1f5df8c86a156c1a1f75c95635ea5d7fe9df673b845a2d4bab",
+    "UIOptionSteamMenuOn-2x.g1t": "e2cb7b131441d09b4821976036c0e122445973a6de7e1171d17c6087074ad577"
+  }
+}
