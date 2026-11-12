@@ -1,0 +1,25 @@
+{
+  "output": "private_bytes.h",
+  "macros": [
+    {
+      "name": "AOT_PRIVATE_ORIGINAL_CALL",
+      "rva": 1144579,
+      "size": 5
+    },
+    {
+      "name": "AOT_PRIVATE_CALL",
+      "rva": 1144572,
+      "size": 19
+    },
+    {
+      "name": "AOT_PRIVATE_ENTRY",
+      "rva": 961440,
+      "size": 16
+    },
+    {
+      "name": "AOT_PRIVATE_EMITTER",
+      "rva": 4592672,
+      "size": 13
+    }
+  ]
+}

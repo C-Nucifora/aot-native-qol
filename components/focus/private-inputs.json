@@ -1,0 +1,15 @@
+{
+  "output": "private_guards.h",
+  "arrays": [
+    {
+      "name": "focus_guard",
+      "rva": 4299746,
+      "size": 14
+    },
+    {
+      "name": "wndproc_guard",
+      "rva": 4299488,
+      "size": 16
+    }
+  ]
+}
